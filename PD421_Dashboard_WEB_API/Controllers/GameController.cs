@@ -35,29 +35,11 @@ namespace PD421_Dashboard_WEB_API.Controllers
             return this.ToActionResult(response);
         }
 
-        [HttpGet("by-id")]
-        public IActionResult GetById(string id)
-        {
-            return Ok();
-        }
-
         [HttpGet("by-genre")]
         public async Task<IActionResult> GetByGenreAsync(string genre)
         {
             var response = await _gameService.GetByGenreAsync(genre);
             return this.ToActionResult(response);
-        }
-
-        [HttpPut]
-        public IActionResult Update()
-        {
-            return Ok();
-        }
-
-        [HttpDelete]
-        public IActionResult Delete()
-        {
-            return Ok();
         }
     }
 }
