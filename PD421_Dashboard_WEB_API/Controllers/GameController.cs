@@ -36,7 +36,7 @@ namespace PD421_Dashboard_WEB_API.Controllers
         }
 
         [HttpGet("by-id")]
-        public async Task<IActionResult> GetByIdAsync(string id)
+        public IActionResult GetById(string id)
         {
             return Ok();
         }
@@ -49,13 +49,13 @@ namespace PD421_Dashboard_WEB_API.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdateAsync()
+        public IActionResult Update()
         {
             return Ok();
         }
 
         [HttpDelete]
-        public async Task<IActionResult> DeleteAsync()
+        public IActionResult Delete()
         {
             return Ok();
         }

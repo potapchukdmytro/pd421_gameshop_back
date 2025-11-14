@@ -60,7 +60,7 @@ namespace PD421_Dashboard_WEB_API.Controllers
         }
 
         [HttpGet("by-name")]
-        public async Task<IActionResult> GetByNameAsync(string name)
+        public IActionResult GetByName(string name)
         {
             return Ok();
         }
